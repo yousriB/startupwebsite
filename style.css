@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+body{
+    font-family: "Roboto", sans-serif;
+    line-height: 1.8;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: 900 !important;
+}
+a{
+    text-decoration: none;
+    transition: all 0.4s ease !important;
+    font-weight: 800 !important;
+    color: #2a2a3a;
+}
+
+section{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    z-index:2px;
+    position: relative;
+    z-index: 2;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background:linear-gradient(rgba(17, 7, 254,0.7),rgba(0, 224, 254,0.7)) ;
+    z-index:-1;
+}
+.bg-cover{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.hero-section{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar{
+    box-shadow: 0 12px 20px rgba(0,0,0,0.1);
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link{
+    background: -webkit-linear-gradient(#00e0fe,#1107fe);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.btn{
+    padding: 14px 22px;
+    background:white;
+    border: none;
+    border-radius: 100px;
+    font-weight: 600;
+    color:linear-gradient( #00e0fe,#1107fe) ;
+    transition: all 0.3s ease;
+}
+.btn:hover{
+    color:white ;
+    transform: translateY(-5px);
+    border: 1px solid white;
+    border-radius:100px ;
+}
+.video-btn{
+    width: 60px;
+    height: 60px;
+    background:white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color:black;
+    border-radius: 50px;
+
+}
+.video-btn i{
+    font-size: 32px;
+}
+.video-btn:hover{
+    transform: translateY(-5px);
+    border: 1px solid white;
+    border-radius:100px ;
+}
+
+/*section 2 Services*/
+
+.section-intro{
+    margin-bottom: 40px;
+
+}
+.section-intro .divider{
+    height: 3px;
+    width: 70px;
+    background:linear-gradient( to right,#00e0fe,#1107fe);
+    margin: 17px auto;
+}
+
+img{
+    width: 100%;
+}
+.service .service-img{
+    position: relative;
+}
+.service .service-img .icon{
+    width: 90px;
+    height: 90px;
+    background:linear-gradient( to right,#00e0fe,#1107fe);
+    color: white;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -45px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.service .service-img .icon i{
+    font-size: 32px;
+}
+.feature i{
+    background: -webkit-linear-gradient(#00e0fe,#1107fe);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 54px;
+}
+
+.review{
+    box-shadow: 0px 12px 12px rgba(0,0,0,0.1);
+}
+
+.review .person{
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(0,0,0,0.09);
+    padding-bottom: 24px;
+    padding-top: 10px;
+}
+.review .person img{
+    width: 75px;
+    height: 75px;
+    border-radius: 100px;
+}
+.review .stars{
+    color: gold;
+}
+
+form .form-control{
+    border-radius: 0px;
+    background: transparent;
+    border-color: rgba(255, 255, 255, 0.5);
+}
+form .form-control:focus{
+    color: white;
+    background: transparent;
+    border-color: white;
+}
+form input .form-control{
+    height: 20px;
+}
+form .form-control::placeholder{
+    color: white;
+}
+
